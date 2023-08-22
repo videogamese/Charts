@@ -14,21 +14,24 @@
     var myChart = new Chart(ctx, {
         type:'doughnut',
         data: {
-            labels: ['Red', 'Blue', 'Yellow'],
+            labels: ['Red', 'Orange', 'Yellow', 'Green', 'Cyan', 'Blue'],
             datasets: [{
                 label: 'My First Doughnut Today',
-                data:[300, 50, 200],
+                data:[300, 50, 200, 150, 321, 91],
                 backgroundColor:[
-                    'rgb(255, 99, 150)',
-                    'rgb(50, 150, 240)',
-                    'rgb(255, 200, 80)'
+                    'rgb(255,0,0)',
+                    'rgb(255,130,0)',
+                    'rgb(255,223,0)',
+                    'rgb(72,255,0)',
+                    'rgb(0,255,199)',
+                    'rgb(0,102,255)'
                 ],
                 hoverOffset: 1
             }]
         }
     });
 </script>
-<div style='width: 200px'>
+<div style='width:200px'>
 <canvas id='myChart2'></canvas>
 </div>
 <script>
@@ -36,18 +39,46 @@
     var myChart = new Chart(ctx, {
         type:'pie',
         data: {
-            labels: ['Red', 'Blue', 'Yellow'],
+            labels: ['Purple', 'Pink', 'Red', 'Orange-Red', 'Red', 'Orange'],
             datasets: [{
                 label: 'My First Doughnut Today',
-                data:[300, 50, 200],
+                data:[300, 50, 200, 87, 58, 90],
                 backgroundColor:[
-                    'rgb(255, 99, 150)',
-                    'rgb(50, 150, 240)',
-                    'rgb(255, 200, 80)'
+                    'rgb(122,0,255)',
+                    'rgb(255,0,219)',
+                    'rgb(255,0,0)',
+                    'rgb(255,79,0)',
+                    'rgb(255,145,0)',
+                    'rgb(255,233,0)'
                 ],
                 hoverOffset: 1
             }]
         }
+    });
+</script>
+<div style='width: 200px'>
+    <canvas id='myChart3'></canvas>
+</div>
+<script>
+    var ctz=document.getElementById('myChart3');
+    var myChart = new Chart( ctz, {
+        type: 'polarArea',
+        data: {
+            labels: [
+                'Yellow-Green', 'Lime', 'Green', 'Turquoise', 'Light-Blue'
+            ],
+            datasets: [{
+                label: 'Polar Area Chart',
+                data: [11, 10, 15, 3, 2],
+                backgroundColor: [
+                    'rgb(208,255,0)',
+                    'rgb(132,255,0)',
+                    'rgb(37,159,0)',
+                    'rgb(0,255,166)',
+                    'rgb(0,130,255)'
+                ]
+            }]
+        },
     });
 </script>
 </body>
