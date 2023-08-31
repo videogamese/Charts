@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js" integrity="sha512-asxKqQghC1oBShyhiBwA+YgotaSYKxGP1rcSYTDrB0U6DxwlJjU59B67U8+5/++uFjcuVM8Hh5cokLjZlhm3Vg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<canvas id='myChart'></canvas>
+<script>
+    var ctx = document.getElementById('myChart')
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+            datasets: [{
+                data:[86, 71, 13, 45, 54, 60, 34, 39, 32, 65, 73, 39],
+                label:'Candy',
+                borderColor: 'rgb(247,0,255)'
+            },
+                {
+                    data:[100, 21, 113, 0, 38, 132, 32, 65, 93, 83, 71, 128],
+                    label:'Clothes',
+                    borderColor: 'rgb(0,0,0)'
+                },
+                {
+                    data:[0, 21, 35, 12, 28, 93, 48, 89, 39, 93, 129, 49],
+                    label:'Amazon',
+                    borderColor: 'rgba(100, 200, 100)'
+                },
+                {
+                    data:[64, 65, 85, 52, 48, 23, 78, 81, 69, 13, 19, 43],
+                    label:'Movies',
+                    borderColor: 'rgb(255,0,0)'
+                }]
+        },
+        options:{
+            plugins:{
+                title: {
+                    display: true,
+                    test: 'Monthly Spending'
+                },
+                legend: {
+                    position: 'left'
+                }
+            }
+        }
+    });
+</script>
+<canvas id="myChart2"></canvas>
+<script>
+    var ctx = document.getElementById('myChart2')
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Brookhaven 🏡RP', 'Adopt Me!', 'Tower of Hell', 'Blox Fruits', '💜 MeepCity 💜', 'Murder Mystery 2', 'Piggy', 'Royale High Campus 3!🏰♡Phases 1-6♡', '❓ Pet Simulator X! 🐾', 'Welcome to Bloxburg', 'BedWars 🔥 [1v1!]', 'Jailbreak', '[GEAR 5] All Star Tower Defense', 'Arsenal', '🍕Work at a Pizza Place', 'Livetopia🏠 Stylized house', 'DOORS 👁️', 'Flee the Facility', 'Tower of Misery', 'Build A Boat For Treasure', '🏴‍☠️PIRATES!🏴‍☠️ Tower Defense Simulator', 'Rainbow Friends', 'Evade', '[UPDATE 4.66] King Legacy', 'Natural Disaster Survival', 'Mad City: Ch.2 - Obliterator 💥', 'Hide and Seek Extreme', 'Bee Swarm Simulator', 'Prison Life', 'ROLE PLAY! CLUB ROBLOX'],
+            datasets: [{
+                label: '# of Votes',
+                data: [35.69, 33.92, 21.43, 20.67, 15.58, 12.06, 11.98, 9.12, 8.32, 7.80, 7.42, 6.48, 6.20, 4.96, 4.45, 3.87, 3.78, 3.58, 3.34, 2.75, 2.57, 2.57, 2.59, 2.54, 2.48, 2.46, 2.38, 2.32, 2.31],
+                backgroundColor: [
+                    'rgba(255,0,0,0.6)',
+                    'rgba(255,128,0,0.6)',
+                    'rgba(255,196,0,0.6)',
+                    'rgba(71,255,0,0.6)',
+                    'rgba(0,51,255,0.6)'
+
+                ],
+                borderColor: [
+                    'rgb(255,0,0)',
+                    'rgb(255,98,0)',
+                    'rgb(255,234,0)',
+                    'rgb(97,255,0)',
+                    'rgb(0,42,255)'
+                ],
+                borderWidth: 10
+            }]
+        },
+    });
+</script>
+
+</body>
+</html>
