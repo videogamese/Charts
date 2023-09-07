@@ -12,27 +12,12 @@
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+            labels: ['Brookhaven 🏡RP', 'Adopt Me!', 'Tower of Hell', 'Blox Fruits', '💜 MeepCity 💜', 'Murder Mystery 2', 'Piggy', 'Royale High Campus 3!🏰♡Phases 1-6♡', '❓ Pet Simulator X! 🐾', 'Welcome to Bloxburg', 'BedWars 🔥 [1v1!]', 'Jailbreak', '[GEAR 5] All Star Tower Defense', 'Arsenal', '🍕Work at a Pizza Place', 'Livetopia🏠 Stylized house', 'DOORS 👁️', 'Flee the Facility', 'Tower of Misery', 'Build A Boat For Treasure', '🏴‍☠️PIRATES!🏴‍☠️ Tower Defense Simulator', 'Rainbow Friends', 'Evade', '[UPDATE 4.66] King Legacy', 'Natural Disaster Survival', 'Mad City: Ch.2 - Obliterator 💥', 'Hide and Seek Extreme', 'Bee Swarm Simulator', 'Prison Life', 'ROLE PLAY! CLUB ROBLOX'],
             datasets: [{
-                data:[86, 71, 13, 45, 54, 60, 34, 39, 32, 65, 73, 39],
-                label:'Candy',
-                borderColor: 'rgb(247,0,255)'
-            },
-                {
-                    data:[100, 21, 113, 0, 38, 132, 32, 65, 93, 83, 71, 128],
-                    label:'Clothes',
-                    borderColor: 'rgb(0,0,0)'
-                },
-                {
-                    data:[0, 21, 35, 12, 28, 93, 48, 89, 39, 93, 129, 49],
-                    label:'Amazon',
-                    borderColor: 'rgba(100, 200, 100)'
-                },
-                {
-                    data:[64, 65, 85, 52, 48, 23, 78, 81, 69, 13, 19, 43],
-                    label:'Movies',
-                    borderColor: 'rgb(255,0,0)'
-                }]
+                data:[35.69, 33.92, 21.43, 20.67, 15.58, 12.06, 11.98, 9.12, 8.32, 7.80, 7.42, 6.48, 6.20, 4.96, 4.45, 3.87, 3.78, 3.58, 3.34, 2.75, 2.57, 2.57, 2.59, 2.54, 2.48, 2.46, 2.38, 2.32, 2.31, 2.25],
+                label:'# of visits in Billions',
+                borderColor: 'rgb(0,0,0)'
+            }]
         },
         options:{
             plugins:{
@@ -55,8 +40,8 @@
         data: {
             labels: ['Brookhaven 🏡RP', 'Adopt Me!', 'Tower of Hell', 'Blox Fruits', '💜 MeepCity 💜', 'Murder Mystery 2', 'Piggy', 'Royale High Campus 3!🏰♡Phases 1-6♡', '❓ Pet Simulator X! 🐾', 'Welcome to Bloxburg', 'BedWars 🔥 [1v1!]', 'Jailbreak', '[GEAR 5] All Star Tower Defense', 'Arsenal', '🍕Work at a Pizza Place', 'Livetopia🏠 Stylized house', 'DOORS 👁️', 'Flee the Facility', 'Tower of Misery', 'Build A Boat For Treasure', '🏴‍☠️PIRATES!🏴‍☠️ Tower Defense Simulator', 'Rainbow Friends', 'Evade', '[UPDATE 4.66] King Legacy', 'Natural Disaster Survival', 'Mad City: Ch.2 - Obliterator 💥', 'Hide and Seek Extreme', 'Bee Swarm Simulator', 'Prison Life', 'ROLE PLAY! CLUB ROBLOX'],
             datasets: [{
-                label: '# of Votes',
-                data: [35.69, 33.92, 21.43, 20.67, 15.58, 12.06, 11.98, 9.12, 8.32, 7.80, 7.42, 6.48, 6.20, 4.96, 4.45, 3.87, 3.78, 3.58, 3.34, 2.75, 2.57, 2.57, 2.59, 2.54, 2.48, 2.46, 2.38, 2.32, 2.31],
+                label: '# of Visits in Billions',
+                data: [35.69, 33.92, 21.43, 20.67, 15.58, 12.06, 11.98, 9.12, 8.32, 7.80, 7.42, 6.48, 6.20, 4.96, 4.45, 3.87, 3.78, 3.58, 3.34, 2.75, 2.57, 2.57, 2.59, 2.54, 2.48, 2.46, 2.38, 2.32, 2.31, 2.25],
                 backgroundColor: [
                     'rgba(255,0,0,0.6)',
                     'rgba(255,128,0,0.6)',
@@ -77,6 +62,30 @@
         },
     });
 </script>
-
+<div style='width:900px'>
+    <canvas id='myChart3'></canvas>
+</div>
+<script>
+    var ctx = document.getElementById('myChart3')
+    var myChart = new Chart(ctx, {
+        type:'pie',
+        data: {
+            labels: ['Brookhaven 🏡RP', 'Adopt Me!', 'Tower of Hell', 'Blox Fruits', '💜 MeepCity 💜', 'Murder Mystery 2', 'Piggy', 'Royale High Campus 3!🏰♡Phases 1-6♡', '❓ Pet Simulator X! 🐾', 'Welcome to Bloxburg', 'BedWars 🔥 [1v1!]', 'Jailbreak', '[GEAR 5] All Star Tower Defense', 'Arsenal', '🍕Work at a Pizza Place', 'Livetopia🏠 Stylized house', 'DOORS 👁️', 'Flee the Facility', 'Tower of Misery', 'Build A Boat For Treasure', '🏴‍☠️PIRATES!🏴‍☠️ Tower Defense Simulator', 'Rainbow Friends', 'Evade', '[UPDATE 4.66] King Legacy', 'Natural Disaster Survival', 'Mad City: Ch.2 - Obliterator 💥', 'Hide and Seek Extreme', 'Bee Swarm Simulator', 'Prison Life', 'ROLE PLAY! CLUB ROBLOX'],
+            datasets: [{
+                label: 'My First Doughnut Today',
+                data:[35.69, 33.92, 21.43, 20.67, 15.58, 12.06, 11.98, 9.12, 8.32, 7.80, 7.42, 6.48, 6.20, 4.96, 4.45, 3.87, 3.78, 3.58, 3.34, 2.75, 2.57, 2.57, 2.59, 2.54, 2.48, 2.46, 2.38, 2.32, 2.31, 2.25],
+                backgroundColor:[
+                    'rgb(122,0,255)',
+                    'rgb(255,0,219)',
+                    'rgb(255,0,0)',
+                    'rgb(255,79,0)',
+                    'rgb(255,145,0)',
+                    'rgb(255,233,0)'
+                ],
+                hoverOffset: 1
+            }]
+        }
+    });
+</script>
 </body>
 </html>
